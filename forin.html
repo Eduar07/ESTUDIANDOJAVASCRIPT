@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        let palabra = 'javascript';
+        for(let f in palabra){
+            document.write(palabra[f]);
+            document.write("<br>");
+        }
+        */
+  let vocal = 0;
+        let palabra = "andresmauricioibañez";
+        for (let f in palabra){
+            if(palabra[f] == 'a' || palabra[f] == 'e' || palabra[f] =='i' || palabra[f]=='u'|| palabra[f]=='o'){
+                vocal++;
+            }
+        }
+        document.writeln("cantidad de vocales: ", vocal)
+    </script>
+</body>
+</html>
