@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let usuario, clave, control;
+
+        control = 0;
+        usuario = prompt("ingrese usuario...");
+        clave = prompt("ingrese su contraseña");
+
+        do {
+            if (clave != "miacceso33%") {
+                clave = prompt("contraseña incorrecta..." + 'intente de nuevo..');
+                control = 0;
+            } else {
+                contro = 1;
+            }
+
+        } while (contro != 1);
+        document.writeln("acceso correcto");
+    </script>
+</body>
+
+</html>
