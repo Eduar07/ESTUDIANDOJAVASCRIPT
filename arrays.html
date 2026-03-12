@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let numeros = [15, 80, 650, 50.30, -10]
+        document.writeln("Elementos: ", numeros)
+        document.writeln("<br>")
+        document.writeln("Primer elemento: ", numeros[0]);
+        document.writeln("<br>");
+        numeros[0] = 14;
+        document.writeln("elementos: ", numeros);
+
+        let frutas = ["manzanas", "peras", "naranjas", "mangos"];
+        document.write("<br>");
+        document.writeln("Frutas: ", frutas);
+        document.write("<br>");
+
+        //metodos de los arrays
+
+        document.write("cantiadad: ", frutas.length);
+        document.write("<br>");
+
+        //saber el ultimo elemento
+        document.write("ultimo elemento: ", numeros[numeros.length - 1]);
+        document.write("<br>");
+
+        //arrays en tipo texto
+        document.write("En string: ", numeros.toString());
+        document.write("<br>");
+
+        //unir tipos de arrays
+        let letras = ["a", "b", "c"];
+        let numeros2 = [1, 2, 3];
+        document.write("alfanumerico: ", letras.concat(numeros2))
+        document.write("<br>");
+
+        //borrar ultimo elemento
+        numeros.pop();
+        document.write(numeros);
+        document.write("<br>");
+
+        //agregar elemento al final
+        numeros.push(-10);
+        document.write(numeros);
+        document.write("<br>");
+
+        //eliminar  primer elemento
+        numeros.shift();
+        document.write(numeros);
+        document.write("<br>");
+
+        //insertar elemento al inicio
+        numeros.unshift(14);
+        document.writeln(numeros);
+        document.write("<br>");
+
+        //eliminar elementos a partir de un punto
+        numeros.splice(2, 3);
+        document.write(numeros);
+        document.write("<br>");
+
+
+        //copiar un array
+        let cantidades = [100, 200, 300, 500, 600, 800];
+        let copia = cantidades.slice(1, 4);
+        document.write("Array copia ", copia);
+        document.write("<br>");
+
+        //organiza arrays en modo alfabetico
+        let objetos = ["carro", "botella", "planeta", "zorro"]
+        document.write(objetos.sort())
+        document.write("<br>");
+
+        document.write(objetos.reverse())
+
+
+
+    </script>
+
+</body>
+
+</html>

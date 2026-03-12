@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let palabra = 'JavaScript';
+    document.write("La palabra es: ", palabra);
+    document.write("<br>");
+
+    //ver tamño de un texto
+    document.writeln('cantidad de letras ', palabra.length);
+    document.writeln("<br>")
+
+    //ver caracteres especificos en un texto
+    document.writeln("Primera 4 letras: ", palabra.slice(0,5))
+    document.write("<br>")
+
+    //ver caracteres especificos en un texto
+    document.writeln("Primera 4 letras: ", palabra.substring(0,5))
+    document.write("<br>")
+
+    //cambiar valores en un texto
+    let saludo = 'hola a todos';
+    saludo = saludo.replace("hola", "adios");
+    document.writeln(saludo);
+    document.writeln("<br>");
+
+    //poner en mayusculas
+
+    document.write("en mayusculas: " , palabra.toUpperCase());
+    document.write("<br>");
+
+    // poner en minisculas
+    document.writeln("en minusculas ", palabra.toLowerCase());
+    document.writeln("<br>");
+
+    //unir texto
+    let palabra2 = "curso de ";
+    document.writeln("unir palabras: ", palabra2.concat(palabra))
+
+    //acortar espacios entre textos
+    let palabra3 = '    hola  ';
+    document.write("<br>");
+    document.writeln(palabra3);
+    document.write("<br>");
+    document.writeln(palabra3.trimStart());
+    document.write("<br>");
+    document.writeln(palabra3.trimEnd());
+    document.write("<br>");
+    document.writeln(palabra3.trim());
+ document.write("<br>");
+    //cortar cantidad de caracteres, escribir bien la palabra
+    document.writeln(palabra.split("Script"));
+   </script> 
+</body>
+</html>
