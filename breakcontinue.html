@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /*
+        for(let f = 0; f<10; f++){
+            document.write(f);
+            document.write("<br>");
+            if(f==3){
+                documen.write("aqui es la vuelta: ", f);
+                document.write("<br>");
+                break;
+            }
+        }
+            */
+           let palabra = 'murcielago';
+           let resultado = '';
+           for(let f in palabra){
+            if(palabra[f]=='a' || palabra[f]=='e' || palabra[f]=='i' || palabra[f]=='o'|| palabra[f]=='u') {
+                continue;
+            }else{
+                resultado+=palabra[f];
+            }
+           }
+           document.writeln(resultado);
+    </script>
+</body>
+</html>
