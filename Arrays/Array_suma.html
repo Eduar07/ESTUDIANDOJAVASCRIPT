@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let numeros = [10, 20, 30, 40, 50];
+    let acumulador = 0;
+    let sumaArray = []; // Creamos el array vacío
+
+    for (let f = 0; f < numeros.length; f++) {
+        acumulador = acumulador + numeros[f];
+    }
+
+    // En lugar de .push(), usamos el índice directamente
+    sumaArray[0] = acumulador; 
+
+    document.write("Resultado dentro del array: " + sumaArray[0]);
+    console.log(sumaArray); // Verás [150]
+</script>
+</body>
+</html>

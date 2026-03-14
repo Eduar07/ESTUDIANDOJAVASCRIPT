@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    // 1. Pedimos los números primero
+    let a = parseInt(prompt("Ingresa el primer número:"));
+    let b = parseInt(prompt("Ingresa el segundo número:"));
+
+    // 2. Creamos el menú con saltos de línea (\n)
+    let menu = "OPERACIÓN MATEMÁTICA\n" +
+               "1. Suma\n" +
+               "2. Resta\n" +
+               "3. Multiplicación\n" +
+               "4. División\n\n" +
+               "Elige una opción:";
+
+    // 3. Mostramos el menú y pedimos la opción al mismo tiempo
+    let opcion = parseInt(prompt(menu));
+
+    let resultado;
+
+    switch (opcion) {
+        case 1:
+            resultado = a + b;
+            document.write("La Suma es: " + resultado);
+            break;
+        case 2:
+            resultado = a - b;
+            document.write("La Resta es: " + resultado);
+            break;
+        case 3:
+            resultado = a * b;
+            document.write("La Multiplicación es: " + resultado);
+            break;
+        case 4:
+            if (b === 0) {
+                document.write("Error: No se puede dividir por cero.");
+            } else {
+                resultado = a / b;
+                document.write("La División es: " + resultado);
+            }
+            break;
+        default:
+            document.write("Opción no válida.");
+            break;
+    }
+</script>
+</body>
+
+</html>

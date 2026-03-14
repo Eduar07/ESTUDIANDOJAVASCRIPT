@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   <script>
+    // 1. Corregimos el orden de parseInt y prompt
+    let anio = parseInt(prompt("Ingrese el año"));
+
+    // 2. Agrupamos con paréntesis para asegurar la lógica
+    if (anio % 4 === 0 && (anio % 100 !== 0 || anio % 400 === 0)) {
+        document.writeln("El año " + anio + " es bisiesto");
+    } else {
+        document.write("El año " + anio + " no es bisiesto");
+    }
+</script>
+</body>
+
+</html>

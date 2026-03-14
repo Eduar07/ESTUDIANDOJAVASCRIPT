@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+    let usuario = prompt("Ingrese su usuario");
+    let contrasenia = prompt("Digite su contraseña");
+
+    let usuarioCorrecto = "admin";
+    let claveCorrecta = "1234";
+
+    // En JS usamos === para comparar contenido y tipo
+    if(usuario === usuarioCorrecto && contrasenia === claveCorrecta){
+        // Quitamos la palabra admin que no era variable
+        document.writeln("ACCESO CONCEDIDO: Bienvenido " + usuarioCorrecto);
+    } else {
+        document.writeln("Acceso denegado");
+    }
+</script>
+</body>
+</html>
