@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let frase = prompt("Ingresar una frase");
+        let vocal = prompt("Ingresa la vocal a buscar");
+        let encontrada = false;
+
+        for(let f in frase){
+           if(frase[f]===vocal){
+            document.write("Letra '" + vocal + "' encontrada en la posición: " + f + "<br>");
+            encontrada = true;
+              break;
+           }
+        }       
+
+        if (!encontrada) {
+        document.write("La letra no se encuentra en la frase.");
+    }
+
+    </script>
+</body>
+</html>
