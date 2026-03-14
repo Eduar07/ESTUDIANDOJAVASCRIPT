@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let notas = [8, 9, 10, 7, 6]
+
+        let sumaTotal = 0;
+        for(let f=0; f<notas.length; f++){
+           sumaTotal = sumaTotal + notas[f];
+        }
+        let Resultado = sumaTotal/notas.length
+
+        document.writeln("Promedio final: ", Resultado)
+        if (Resultado >= 7) {
+            document.writeln("Estado: APROBADO 🎓");
+        } else {
+            document.writeln("Estado: REPROBADO ❌");
+        }
+
+    </script>
+</body>
+</html>
