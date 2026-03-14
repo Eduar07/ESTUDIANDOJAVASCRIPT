@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<script>
+    let colores = ["Rojo", "Verde", "Azul", "Amarillo"];
+    let invertido = [];
+    let j = 0; // Este será el índice para el nuevo array
+
+    // Empezamos en 3 (largo - 1), hasta llegar a 0, restando
+    for (let f = colores.length - 1; f >= 0; f--) {
+        invertido[j] = colores[f]; // Guardamos el color actual en la posición j
+        j++; // Aumentamos j para la siguiente posición
+    }
+
+    document.write("Original: " + colores + "<br>");
+    document.write("Invertido: " + invertido);
+</script>
+</body>
+
+</html>

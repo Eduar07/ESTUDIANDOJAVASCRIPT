@@ -6,6 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        let array = [15, 85, 42, 105, 23, 77];
+
+         let numeroMayor = array[0];
+
+        for(let f =0; f<array.length; f++){
+           if(array[f]>numeroMayor){
+            numeroMayor = array[f];
+           }
+        }document.writeln("El numero mayor es: ", numeroMayor)
+    </script>
 </body>
 </html>

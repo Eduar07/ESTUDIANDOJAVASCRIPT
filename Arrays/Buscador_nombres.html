@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let invitados = ["Ana", "Pedro", "Juan", "Maria", "Luis"];
+
+        let nombre = prompt("Ingrese el nombre a buscar")
+
+        let encontrado = false;
+
+        for( let f = 0; f<invitados.length; f++){
+              if(invitados[f].toLowerCase === nombre.toLowerCase){
+                document.writeln("Nombre encontrado");
+                encontrado = true;
+                break;
+              }
+        }
+        if (encontrado) {
+            document.writeln("El invitado " + nombre + " está en la lista. ✅");
+        } else {
+            document.writeln("Lo siento, " + nombre + " no está invitado. ❌");
+        }
+    </script>
+</body>
+</html>
