@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inversion Texto Manual</title>
+</head>
+
+<body>
+ <script>
+    let palabra = prompt("Por favor digita una palabra");
+    let palabraInversa = ""; // Empezamos vacío, sin espacios
+
+    for (let i = palabra.length - 1; i >= 0; i--) {
+        // Vamos sumando cada letra a la variable
+        palabraInversa += palabra[i];
+    }
+
+    // Al final, lo mostramos todo en Mayúsculas
+    document.writeln("Palabra Inversa: " + palabraInversa.toUpperCase());
+</script>
+</body>
+
+</html>
