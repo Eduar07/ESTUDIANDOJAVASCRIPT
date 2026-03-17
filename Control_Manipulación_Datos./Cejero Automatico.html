@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <script>
+
+        let monto;
+
+        do {
+            monto = parseInt(prompt("¿Cuánto dinero desea retirar? (Solo múltiplos de 10)"));
+            if (isNaN(monto) || monto % 10 !== 0) {
+            alert("Error: Por favor ingresa un monto válido (ej: 20, 50, 100).");
+        }
+        } while (isNaN(monto) || monto % 10 !== 0); 
+    // El bucle se repite MIENTRAS sea NaN o NO sea múltiplo de 10
+
+    document.write("Retiro de " + monto + " procesado exitosamente.");
+    </script>
+</body>
+</html>

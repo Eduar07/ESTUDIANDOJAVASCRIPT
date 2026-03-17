@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   <script>
+    let total = 0;
+    let numero = -1; // Lo inicializamos con algo que no sea 0 para que entre al bucle
+
+    while(total < 100 && numero !== 0){
+         numero = parseInt(prompt("Ingrese valor (0 para salir):"));
+         
+         // Validamos que sea un número real para no sumar "NaN"
+         if(!isNaN(numero)){
+            total += numero; // Forma corta de total = total + numero
+         }
+    }
+    document.write("Total Acumulado: " + total);
+</script>
+</body>
+
+</html>

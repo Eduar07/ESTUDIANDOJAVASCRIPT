@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtro Selectivo</title>
+</head>
+
+<body>
+    <script>
+        let frase = prompt("Porfavor digitar una frase");
+        let nuevaVariable = "";
+        for (let f in frase) {
+            if (frase[f] === "a" || frase[f] === " ") {
+                continue;
+            }
+            nuevaVariable += frase[f]
+        }
+
+        document.writeln("Resultado, " + nuevaVariable)
+    </script>
+</body>
+
+</html>
